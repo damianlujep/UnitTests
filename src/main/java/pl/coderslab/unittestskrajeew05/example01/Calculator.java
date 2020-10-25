@@ -28,4 +28,22 @@ public class Calculator {
     public boolean greater(int a, int b){
         return a>b;
     }
+
+    public int eval(String s) {
+        int result = 0;
+        String[] split = s.split("\\+", 3);
+        String[] split1 = s.split("\\d", 4);
+        //TODO for all the operations
+
+        for (String e : split){
+            int i = Integer.parseInt(e);
+            result += i;
+        }
+
+        return result;
+    }
+
+    public double factorial(int n)  {
+        throw new RuntimeException("Not implemented");
+    }
 }
